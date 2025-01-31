@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #000000; /* Changed to black */
+    color: #ffffff; /* Changed text color to white for better contrast */
+}
+
+h1 {
+    margin-top: 20px;
+    color: #ffffff; /* Ensure the heading is visible */
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    justify-content: center;
+    margin: 20px auto;
+    background-color: #000000; /* Maintain black background for the board */
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #333333; /* Slightly lighter black for cells */
+    border: 2px solid #ffffff; /* White border for contrast */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+    color: #ffffff; /* Text color set to white */
+}
+
+.cell:hover {
+    background-color: #444444; /* Slightly lighter color on hover */
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #ffffff; /* Ensure the message text is visible */
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ffffff; /* White button for contrast */
+    color: #000000; /* Black text for the button */
+    border: none;
+    cursor: pointer;
+}
